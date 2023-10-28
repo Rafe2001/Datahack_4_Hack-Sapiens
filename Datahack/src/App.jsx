@@ -1,33 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import { styled } from '@mui/material/styles';
+import { SidebarWithSearch } from './components/Sidebar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+      <div className='text-3xl font-bold'>
+      <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        <Grid item xs={4} className='border-1px-solid'>
+        <SidebarWithSearch />
+
+        </Grid>
+        <Grid item xs={8}  className='border-10px-solid'>
+          hi
+          ernvewjbvj
+        </Grid>
+          {/* <Grid item xs={4}>
+            hi
+          </Grid>
+          <Grid item xs={8}>
+            hi
+          </Grid> */}
+      </Grid>
+    </Box>
+       
+        
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+
+
     </>
   )
 }
