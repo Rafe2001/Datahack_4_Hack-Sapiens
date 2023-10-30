@@ -52,7 +52,7 @@ export function SidebarWithSearch() {
           <div className="mb-2 flex items-center gap-4 p-4">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvByh8ExhBokqH6PbFN_GYlYgHRtbRk-qVpw&usqp=CAU" alt="brand" className="h-8 w-8" />
             <Typography variant="h5" color="blue-gray">
-              Hack-Sapiens
+              Legal-Sapiens
             </Typography>
           </div>
           <div className="p-2">
